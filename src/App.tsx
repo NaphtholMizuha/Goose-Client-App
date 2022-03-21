@@ -2,6 +2,7 @@ import React from "react";
 
 // 导入路由组件
 import {BrowserRouter as Router, Routes,Route, Navigate} from 'react-router-dom'
+import Fuck from "./components/Fuxk";
 
 // 导入页面
 import Home from "./pages/Home";
@@ -17,6 +18,7 @@ function App() {
         <Route path = "/home/*" element = {<Home/>}>
           <Route path = "" element = {<MainPage/>} />
         </Route>
+        <Route path='/fuck/*' element={<Fuck />} />
         <Route path = "*" element = {<Navigate to ="/home"/>}/>
       </Routes>
     </div>
